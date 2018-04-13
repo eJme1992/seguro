@@ -10076,6 +10076,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Mostrar Resultados
       document.querySelector('.contentInf').addClass('d-none');
       document.querySelector('.contentResult').removeClass('d-none');
+      document.querySelector('.contentResult').addClass('full');
+      document.querySelector('.contentForm').addClass('d-none');
+
+
       
       // Limpiar Campos del Formulario
       document.querySelector('#addFamilyOff').click();
