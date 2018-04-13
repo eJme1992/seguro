@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>filtro</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">-->
+
+</head>
+
+<body>
+  <main>
+    <section class="query">
+      <div class="contentInf">
+        <p>
+          Mejores Seguros de Salud del Perú
+        </p>
+        <p>
+          Cotiza en segundos los planes de todas las aseguradoras, desde los básicos hasta los que cuentan con reembolso y cobertura
+          internacional
+        </p>
+        <p>
+          Trabajamos con Pacifico, Rimac, La Positiva y Mapfre
+        </p>
+        <p>
+          El seguro médico o de salud es la mejor manera de tener la tranquilidad que los gastos por tratamientos de enfermedades o
+          accidentes estarán cubiertos.
+        </p>
+        <p>
+          Cubren el pago de las atenciones en las mejores clínicas en Lima y provincias, ya sean ambulatorias, hospitalarias, emergencias,
+          maternidad, oncológicas, médicas a domicilio, chequeos preventivos, entre otros beneficios detallados en cada plan.
+        </p>
+        <p>
+          Contamos con planes de Seguro de Salud para todos los bolsillos, desde baratos y muy económicos, en donde se atiende en red
+          de clínicas especialmente seleccionadas, hasta los más completos con atención en las principales clínicas a nivel
+          nacional e internacional.
+        </p>
+        <p>
+          Solo debes cotizar y analizar cuál es el producto que se ajusta de tus necesidades y a las de tu familia de ser el caso.
+          De tener alguna duda o consulta, no dudes en contactarnos para resolverlas a la brevedad.
+        </p>
+      </div>
+      <div class="contentResult d-none">
+        
+      </div>
+      <div class="contentForm">
+        <form name="formQueryCotizar" class="formCotizar" method="post">
+          <h2>Seguro de Salud</h2>
+          <p>
+            Seguro que brinda protección a ti y a tu familia contra el cáncer con cobertura al 100% a nivel nacional, desde la prevención
+            hasta el tratamiento. así como alternativas para la atención en el extranjero
+          </p>
+          <label>Plan de seguro:</label>
+          <select class="plan" required>
+            <option selected="true" disabled="disabled">Seleccionar</option>
+            <option value="saludBasica">Salud Basica</option>
+            <option value="saludMixta">Salud Mixta</option>
+            <option value="saludNacional">Salud Nacional</option>
+            <option value="saludInternacional">Salud Internacional</option>
+            <option value="saludAdulto">Salud Adulto Mayor</option>
+            <option value="saludHospitalario">Salud Hospítalario</option>
+            <option value="oncologicosNacional">Oncologico nacional</option>
+            <option value="oncologicosInternacional">Oncologico internacional</option>
+          </select>
+          <label>Edad del titular:</label>
+          <select class="clientAge" required>
+            <option selected="true" disabled="disabled">Seleccionar</option>
+          </select>
+          <label class="addFamily addFamily__Title">¿Deseas Agregar a tus familiares?</label>
+          <div class="addFamily addFamily__Question">
+            <label>Si</label>
+            <input type='radio' name='addFamily' id='addFamilyOn'>
+
+            <label>No</label>
+            <input type='radio' name='addFamily' id='addFamilyOff' checked>
+          </div>
+          <div class="addFamily addFamily__Content d-none">
+            <button class="btnAddFamily">Agregar mas dependientes</button>
+          </div>
+          <button type="submit" class="btnSubmit">COTIZAR</button>
+        </form>
+      </div>
+    </section>
+  </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
