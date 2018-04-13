@@ -318,6 +318,8 @@ const objetDb = {
     {
       "aseguradora": "rimac",
       "producto": "Red Preferente",
+      "coberturaMaxima": "3.200.000",
+      "coberturaInstalaciones": "Atención ambulatoria y hospitalaria en centros médicos, clínicas SANNA y otras de buen nivel.",
       "primas": {
         "titular": [{
             "0-4": 1806.64
@@ -625,71 +627,633 @@ const objetDb = {
         }
     }
   ],
-  "saludMixta": {
-    "pacifico": {
-
+  "saludMixta": [{
+    "aseguradora": "Pacifico",
+    "producto": "Red Preferente",
+    "coberturaMaxima": "3.200.000",
+    "coberturaInstalaciones": "Atención ambulatoria y hospitalaria en centros médicos, clínicas SANNA y otras de buen nivel.",
+    "coberturas": [{
+      "cobertura": "Atencion Ambulatoria",
+      "locations": [{
+        "location" : "En el peru",
+        "content" : [{
+          "name": "Atencion en clinicas de credito",
+          "content":[{
+            "clinica": "Red SANNA - Centros Clinicos",
+            "deducible": "S/. 60",
+            "coaseguro": "100%"
+          },
+          {
+            "clinica": "Red 1",
+            "deducible": "S/. 45",
+            "coaseguro": "80%"
+          },
+          {
+            "clinica": "Red 2",
+            "deducible": "S/.60",
+            "coaseguro": "75%"
+          },
+          {
+            "clinica": "Red 3",
+            "deducible": "S/ 75",
+            "coaseguro": "70%"
+          }]
+        }]
+      }]
+    }],
+    "primas": {
+      "titular": [
+        {
+          "0": 1806.64
+        },
+        {
+          "1": 1806.64
+        },
+        {
+          "2": 1806.64
+        },
+        {
+          "3": 1806.64
+        },
+        {
+          "4": 1806.64
+        },
+        {
+          "5": 1693.73
+        },
+        {
+          "6": 1727.60
+        },
+        {
+          "7": 1727.60
+        },
+        {
+          "8": 1727.60
+        },
+        {
+          "9": 1727.60
+        },
+        {
+          "10": 1727.60
+        },
+        {
+          "11": 1727.60
+        },
+        {
+          "12": 1727.60
+        },
+        {
+          "13": 1727.60
+        },
+        {
+          "14": 1727.60
+        },
+        {
+          "15": 1727.60
+        },
+        {
+          "16": 1727.60
+        },
+        {
+          "17": 1727.60
+        },
+        {
+          "18": 1761.48
+        },
+        {
+          "19": 1760.35
+        },
+        {
+          "20": 1769.38
+        },
+        {
+          "21": 1782.93
+        },
+        {
+          "22": 1787.45
+        },
+        {
+          "23": 1799.87
+        },
+        {
+          "24": 1813.42
+        },
+        {
+          "25": 1825.84
+        },
+        {
+          "26": 1830.35
+        },
+        {
+          "27": 1840.52
+        },
+        {
+          "28": 1854.07
+        },
+        {
+          "29": 1866.49
+        },
+        {
+          "30": 1878.91
+        },
+        {
+          "31": 2057.31
+        },
+        {
+          "32": 2119.42
+        },
+        {
+          "33": 2210.88
+        },
+        {
+          "34": 2224.43
+        },
+        {
+          "35": 2227.82
+        },
+        {
+          "36": 2282.02
+        },
+        {
+          "37": 2300.08
+        },
+        {
+          "38": 2356.54
+        },
+        {
+          "39": 2392.67
+        },
+        {
+          "40": 2406.22
+        },
+        {
+          "41": 2419.77
+        },
+        {
+          "42": 2541.72
+        },
+        {
+          "43": 2602.69
+        },
+        {
+          "44": 2697.54
+        },
+        {
+          "45": 2809.33
+        }
+      ],
+      "dependiente": [
+        {
+          "0": 1806.64
+        },
+        {
+          "1": 1806.64
+        },
+        {
+          "2": 1806.64
+        },
+        {
+          "3": 1806.64
+        },
+        {
+          "4": 1806.64
+        },
+        {
+          "5": 1693.73
+        },
+        {
+          "6": 1727.60
+        },
+        {
+          "7": 1727.60
+        },
+        {
+          "8": 1727.60
+        },
+        {
+          "9": 1727.60
+        },
+        {
+          "10": 1727.60
+        },
+        {
+          "11": 1727.60
+        },
+        {
+          "12": 1727.60
+        },
+        {
+          "13": 1727.60
+        },
+        {
+          "14": 1727.60
+        },
+        {
+          "15": 1727.60
+        },
+        {
+          "16": 1727.60
+        },
+        {
+          "17": 1727.60
+        },
+        {
+          "18": 1761.48
+        },
+        {
+          "19": 1760.35
+        },
+        {
+          "20": 1769.38
+        },
+        {
+          "21": 1782.93
+        },
+        {
+          "22": 1787.45
+        },
+        {
+          "23": 1799.87
+        },
+        {
+          "24": 1813.42
+        },
+        {
+          "25": 1825.84
+        },
+        {
+          "26": 1830.35
+        },
+        {
+          "27": 1840.52
+        },
+        {
+          "28": 1854.07
+        },
+        {
+          "29": 1866.49
+        },
+        {
+          "30": 1878.91
+        },
+        {
+          "31": 2057.31
+        },
+        {
+          "32": 2119.42
+        },
+        {
+          "33": 2210.88
+        },
+        {
+          "34": 2224.43
+        },
+        {
+          "35": 2227.82
+        },
+        {
+          "36": 2282.02
+        },
+        {
+          "37": 2300.08
+        },
+        {
+          "38": 2356.54
+        },
+        {
+          "39": 2392.67
+        },
+        {
+          "40": 2406.22
+        },
+        {
+          "41": 2419.77
+        },
+        {
+          "42": 2541.72
+        },
+        {
+          "43": 2602.69
+        },
+        {
+          "44": 2697.54
+        },
+        {
+          "45": 2809.33
+        }
+      ]
+    }},
+    {
+      "aseguradora": "rimac",
+      "producto": "Red Preferente",
+      "primas": {
+        "titular": [{
+            "0-4": 1806.64
+          },
+          {
+            "5": 1693.73
+          },
+          {
+            "6-17": 1727.60
+          },
+          {
+            "18": 1761.48
+          },
+          {
+            "19": 1760.35
+          },
+            {
+              "20": 1769.38
+            },
+            {
+              "21": 1782.93
+            },
+            {
+              "22": 1787.45
+            },
+            {
+              "23": 1799.87
+            },
+            {
+              "24": 1813.42
+            },
+            {
+              "25": 1825.84
+            },
+            {
+              "26": 1830.35
+            },
+            {
+              "27": 1840.52
+            },
+            {
+              "28": 1854.07
+            },
+            {
+              "29": 1866.49
+            },
+            {
+              "30": 1878.91
+            },
+            {
+              "31": 2057.31
+            },
+            {
+              "32": 2119.42
+            },
+            {
+              "33": 2210.88
+            },
+            {
+              "34": 2224.43
+            },
+            {
+              "35": 2227.82
+            },
+            {
+              "36": 2282.02
+            },
+            {
+              "37": 2300.08
+            },
+            {
+              "38": 2356.54
+            },
+            {
+              "39": 2392.67
+            },
+            {
+              "40": 2406.22
+            },
+            {
+              "41": 2419.77
+            },
+            {
+              "42": 2541.72
+            },
+            {
+              "43": 2602.69
+            },
+            {
+              "44": 2697.54
+            },
+            {
+              "45": 2809.33
+            }
+          ],
+          "dependiente": [{
+  
+          }]
+        }
     },
-    "rimac": {
-
+    {
+      "aseguradora": "mapfre",
+      "producto": "VIVA SALUD GENERICO",
+      "primas": {
+        "titular": [{
+            "0-4": 1806.64
+          },
+          {
+            "5": 1693.73
+          },
+          {
+            "6-17": 1727.60
+          },
+          {
+            "18": 1761.48
+          },
+          {
+            "19": 1760.35
+          },
+            {
+              "20": 1769.38
+            },
+            {
+              "21": 1782.93
+            },
+            {
+              "22": 1787.45
+            },
+            {
+              "23": 1799.87
+            },
+            {
+              "24": 1813.42
+            },
+            {
+              "25": 1825.84
+            },
+            {
+              "26": 1830.35
+            },
+            {
+              "27": 1840.52
+            },
+            {
+              "28": 1854.07
+            },
+            {
+              "29": 1866.49
+            },
+            {
+              "30": 1878.91
+            },
+            {
+              "31": 2057.31
+            },
+            {
+              "32": 2119.42
+            },
+            {
+              "33": 2210.88
+            },
+            {
+              "34": 2224.43
+            },
+            {
+              "35": 2227.82
+            },
+            {
+              "36": 2282.02
+            },
+            {
+              "37": 2300.08
+            },
+            {
+              "38": 2356.54
+            },
+            {
+              "39": 2392.67
+            },
+            {
+              "40": 2406.22
+            },
+            {
+              "41": 2419.77
+            },
+            {
+              "42": 2541.72
+            },
+            {
+              "43": 2602.69
+            },
+            {
+              "44": 2697.54
+            },
+            {
+              "45": 2809.33
+            }
+          ],
+          "dependiente": [{
+  
+          }]
+        }
     },
-    "mapfre": {
-
-    },
-    "positiva": {
-
+    {
+      "aseguradora": "positiva",
+      "producto": "KIO DAY SALUD",
+      "primas": {
+        "titular": [{
+            "0-4": 1806.64
+          },
+          {
+            "5": 1693.73
+          },
+          {
+            "6-17": 1727.60
+          },
+          {
+            "18": 1761.48
+          },
+          {
+            "19": 1760.35
+          },
+            {
+              "20": 1769.38
+            },
+            {
+              "21": 1782.93
+            },
+            {
+              "22": 1787.45
+            },
+            {
+              "23": 1799.87
+            },
+            {
+              "24": 1813.42
+            },
+            {
+              "25": 1825.84
+            },
+            {
+              "26": 1830.35
+            },
+            {
+              "27": 1840.52
+            },
+            {
+              "28": 1854.07
+            },
+            {
+              "29": 1866.49
+            },
+            {
+              "30": 1878.91
+            },
+            {
+              "31": 2057.31
+            },
+            {
+              "32": 2119.42
+            },
+            {
+              "33": 2210.88
+            },
+            {
+              "34": 2224.43
+            },
+            {
+              "35": 2227.82
+            },
+            {
+              "36": 2282.02
+            },
+            {
+              "37": 2300.08
+            },
+            {
+              "38": 2356.54
+            },
+            {
+              "39": 2392.67
+            },
+            {
+              "40": 2406.22
+            },
+            {
+              "41": 2419.77
+            },
+            {
+              "42": 2541.72
+            },
+            {
+              "43": 2602.69
+            },
+            {
+              "44": 2697.54
+            },
+            {
+              "45": 2809.33
+            }
+          ],
+          "dependiente": [{
+  
+          }]
+        }
     }
-  },
-  "saludNacional": {
-    "pacifico": {
+  ]
 
-    },
-    "rimac": {
-
-    },
-    "mapfre": {
-
-    },
-    "positiva": {
-
-    }
-  },
-  "saludInternacional": {
-    "pacifico": {
-
-    },
-    "rimac": {
-
-    },
-    "mapfre": {
-
-    },
-    "positiva": {
-
-    }
-  },
-  "saludAdulto": {
-    "positiva": {
-      "name": "MEDIPLUS ORO II"
-    }
-  },
-  "saludHospitalario": {
-    "positiva": {
-      "name": "HOSPITALARIO"
-    }
-  },
-  "oncologicosNacional": {
-    "pacifico": {
-
-    },
-    "rimac": {
-
-    }
-  },
-  "oncologicosInternacional": {
-    "pacifico": {
-
-    }
-  }
 }
 
 
@@ -822,21 +1386,27 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
 
     // Obtener Datos del Form
-    let plan = document.querySelector('.plan').value,
+      let plan = document.querySelector('.plan').value,
       edadTitular = document.querySelector('.clientAge').value,
       tipoDependiente = document.querySelectorAll('.familyRelation'), 
       edadDependiente = document.querySelectorAll('.familyAge');
 
-    // Generar Resultados
-    renderResult(plan, edadTitular, tipoDependiente, edadDependiente);
+  // console.log(edadDependiente);
 
-    // Mostrar Resultados
-    document.querySelector('.contentInf').addClass('d-none');
-    document.querySelector('.contentResult').removeClass('d-none');
-    
-    // Limpiar Campos del Formulario
-    document.querySelector('#addFamilyOff').click();
-    e.target.reset();
+    // Generar Resultados
+    if (objetDb[plan]){
+      renderResult(plan, edadTitular, tipoDependiente, edadDependiente);
+
+      // Mostrar Resultados
+      document.querySelector('.contentInf').addClass('d-none');
+      document.querySelector('.contentResult').removeClass('d-none');
+      
+      // Limpiar Campos del Formulario
+      document.querySelector('#addFamilyOff').click();
+      e.target.reset();
+    }else{
+      alert("El plan, no se encuentra en el JSON")
+    }
   })
 })
 
@@ -845,31 +1415,33 @@ function renderResult (plan, edadTitular, tipoDependiente, edadDependiente) {
     parent = document.querySelector('.contentResult'),
     elementTemp = document.createElement('table'),
     elementHTML = `<thead>
-      <tr>
-        <td class="aseguradora" width="200">Aseguradora / Producto</td>
-        <td class="costo_anual" width="155">Costo total anual<br>(Inc. Impuestos)</td>
-        <td class="financiamiento" width="155">Financiamiento</td>
-        <td class="coberturas" width="370">Coberturas / Deducibles</td>
-        <td class="promociones" width="170">Promociones</td>
-      </tr>
-    </thead>
-    <tbody>`;
-
+                  <tr>
+                    <td class="aseguradora" width="200">Aseguradora / Producto</td>
+                    <td class="costo_anual" width="155">Costo total anual<br>(Inc. Impuestos)</td>
+                    <td class="financiamiento" width="155">Financiamiento</td>
+                    <td class="coberturas" width="370">Coberturas / Deducibles</td>
+                    <td class="promociones" width="170">Promociones</td>
+                  </tr>
+                </thead>
+                <tbody>`;
+  //onsole.log(objetDb[plan]);
   objetDb[plan].forEach ((e) => {
     let primaAnual = 0;
     
     // Prima Titular / Conyugue
+   // console.log(e.primas.titular);
     e.primas.titular.forEach ( ( e2 ) => {
     
       if(Object.keys(e2) == edadTitular) {
         primaAnual += Object.values(e2)[0];
-        console.log("añadio Titular:", primaAnual);
+        //console.log("añadio Titular:", primaAnual);
       }
+    //  console.log(tipoDependiente);
       tipoDependiente.forEach( (e3, i) => {
         if (e3.value == 0) {
           if(Object.keys(e2) == edadDependiente[i].value) {
             primaAnual += Object.values(e2)[0];
-            console.log ("añadio Conyugue: ", primaAnual);
+            //console.log ("añadio Conyugue: ", primaAnual);
           }
         }
       })
@@ -881,7 +1453,7 @@ function renderResult (plan, edadTitular, tipoDependiente, edadDependiente) {
         if (e3.value == 1) {
           if(Object.keys(e2) == edadDependiente[i].value) {
               primaAnual += Object.values(e2)[0];
-              console.log("añadio hijo: ", primaAnual);
+              //console.log("añadio hijo: ", primaAnual);
           }
         }
       }) 
@@ -889,7 +1461,7 @@ function renderResult (plan, edadTitular, tipoDependiente, edadDependiente) {
 
     // Formatear Valores
     primaAnual = formatNumber(primaAnual);
-	console.log("format");
+	//console.log("format");
 
     trueBono = (e.promo) ? 'Bono instantáneo' : '';
 
