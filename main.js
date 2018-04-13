@@ -10160,6 +10160,7 @@ function renderResult (plan, edadTitular, tipoDependiente, edadDependiente) {
         <strong>S/. ${primaAnual}</strong>
       </td>
       <td class="financiamiento">
+       5 cuantas sin intereses de s/243
       </td>
       <td class="coberturas">
         Beneficio máximo anual S/. ${e.coberturaMaxima}. ${e.coberturaInstalaciones}.
