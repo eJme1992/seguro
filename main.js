@@ -10096,11 +10096,11 @@ function renderResult (plan, edadTitular, tipoDependiente, edadDependiente) {
     elementTemp = document.createElement('table'),
     elementHTML = `<thead>
                   <tr>
-                    <td class="aseguradora" width="200">Aseguradora / Producto</td>
-                    <td class="costo_anual" width="155">Costo total anual<br>(Inc. Impuestos)</td>
-                    <td class="financiamiento" width="155">Financiamiento</td>
-                    <td class="coberturas" width="370">Coberturas / Deducibles</td>
-                    <td class="promociones" width="170">Promociones</td>
+                    <td class="aseguradora" width="200"><h3>Aseguradora / Producto</h3></td>
+                    <td class="costo_anual" width="155"><h3>Costo total anual<br>(Inc. Impuestos)</h3></td>
+                    <td class="financiamiento" width="155"><h3>Financiamiento</h3></td>
+                    <td class="coberturas" width="370"><h3>Coberturas / Deducibles</h3></td>
+                    <td class="promociones" width="170"><h3>Promociones</h3></td>
                   </tr>
                 </thead>
                 <tbody>`;
@@ -10178,7 +10178,7 @@ function renderResult (plan, edadTitular, tipoDependiente, edadDependiente) {
       </td>
     </tr>`
   })
-  elementHTML += '</tbody>';
+  elementHTML += '</tbody><br><br><br><br><button type="button" onclick="location.reload(true);"id="btn-refresh">VOLVER AL COTIZADOR</button>';
   elementTemp.innerHTML = elementHTML;
   parent.innerHTML = '';
   parent.insertBefore(elementTemp, parent.lastElementChild);

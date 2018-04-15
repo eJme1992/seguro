@@ -39,6 +39,16 @@
 	width: 67%;
 	padding: 2rem 1rem;
 }
+
+
+.contentResult thead{
+  background: #8bc6f1;
+}
+
+.contentResult thead td{
+  padding: .5%;
+  text-align: center;
+}
 .contentForm form {
   background-color: #172A6E;
   color: white;
@@ -97,6 +107,7 @@
   background-color: #fff;
   border: 1px solid #fff;
   height: 2rem;
+  color: blue
 }
 
 .inf p {
@@ -107,4 +118,8 @@
 .logoTable{
   width: 175px;
   height: 90px;
+}
+
+.familyRelation, .familyAge{
+  height: 3em !important;
 }
